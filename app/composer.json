@@ -1,11 +1,15 @@
 {
-    "name": "Test Silex project",
-    "description": "Test Silex project",
+    "name": "Projekt PHP",
+    "description": "Serwis do nauki przed egzaminem CAE",
     "license": "MIT",
     "type": "project",
     "require": {
         "php": ">=5.5.9",
-        "silex/silex": "^2.2"
+        "silex/silex": "^2.2",
+        "twbs/bootstrap": "^4.1"
+    },
+    "autoload": {
+        "psr-0": { "": "src/" }
     },
         "require-dev": {
             "escapestudios/symfony2-coding-standard": "^3.1",
