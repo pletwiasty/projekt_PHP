@@ -1,0 +1,25 @@
+{
+    "name": "Projekt PHP",
+    "description": "Serwis do nauki przed egzaminem CAE",
+    "license": "MIT",
+    "type": "project",
+    "require": {
+        "php": ">=5.5.9",
+        "silex/silex": "^2.2",
+        "twbs/bootstrap": "^4.1"
+    },
+    "autoload": {
+        "psr-0": { "": "src/" }
+    },
+        "require-dev": {
+            "escapestudios/symfony2-coding-standard": "^3.1",
+            "squizlabs/php_codesniffer": "^3.2",
+            "phpmd/phpmd": "^2.6"
+        },
+    "scripts": {
+        "run": [
+            "echo 'Started web server on http://localhost:8000'",
+            "php -S localhost:8000 -t web"
+        ]
+    }
+}
