@@ -1,7 +1,14 @@
-<h1>View Bookmark</h1>
+<h1>
+    {{ 'title.bookmark_view'|trans({'%id%': bookmark.id}) }}
+</h1>
 {% if bookmark is defined and bookmark|length %}
     <div>
         {{ bookmark.title }}, {{ bookmark.url }}
+    </div>
+    <div>
+        <a href="{{ url('bookmarks_index') }}" title="{{ 'label.back_to_list'|trans }}">
+            {{ 'label.back_to_list'|trans }}
+        </a>
     </div>
 {% else %}
     <div>

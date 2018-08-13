@@ -1,17 +1,13 @@
-{% extends 'base.html.twig' %}
 
-{% block title %}
-    Bookmarks
-{% endblock %}
 
 {% block body %}
     <h1>
-        Bookmarks
+        {{ 'title.bookmarks_list'|trans }}
     </h1>
     {% if bookmarks is defined and bookmarks|length %}
         <ul>
             {% for row in bookmarks %}
-                <li>{{ row.title }}, {{ row.url }}</li>
+                <li>{{ row.id }},{{ row.title }}, {{ row.url }} </li>
             {% endfor %}
         </ul>
     {% else %}

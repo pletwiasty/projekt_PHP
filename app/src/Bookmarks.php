@@ -19,7 +19,9 @@ class Bookmarks
      * @var array $bookmarks
      */
     protected $bookmarks = [
+
         [
+            'id' => '1',
             'title' => 'PHP manual',
             'url'   => 'http://php.net',
             'tags'  => [
@@ -27,7 +29,9 @@ class Bookmarks
                 'manual',
             ],
         ],
+
         [
+            'id' => '2',
             'title' => 'Silex',
             'url'   => 'http://silex.sensiolabs.org',
             'tags'  => [
@@ -37,6 +41,7 @@ class Bookmarks
             ],
         ],
         [
+            'id' => '3',
             'title' => 'Learn Git Branching',
             'url'   => 'http://learngitbranching.js.org',
             'tags'  => [
@@ -47,6 +52,7 @@ class Bookmarks
             ],
         ],
         [
+            'id' => '4',
             'title' => 'PhpStorm',
             'url'  => 'https://www.jetbrains.com/phpstorm',
             'tags' => [
@@ -56,6 +62,7 @@ class Bookmarks
             ],
         ],
         [
+            'id' => '5',
             'title' => 'Twig',
             'url'  => 'http://twig.sensiolabs.org',
             'tags' => [

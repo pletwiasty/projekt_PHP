@@ -7,21 +7,15 @@
  */
 
 use Controller\HelloController;
+use Controller\BookmarksController;
 use Model\Bookmarks;
 
 $bookmarksModel = new Bookmarks();
 
 $app->mount('/hello', new HelloController());
+$app->mount('/bookmarks', new BookmarksController());
 
-$app->get(
-    '/bookmarks',
-    function () use ($app, $bookmarksModel) {
-        return $app['twig']->render(
-            'bookmarks/index.html.twig',
-            ['bookmarks' => $bookmarksModel->findAll()]
-        );
-    }
-);
+
 
 $app->get(
     '/bookmarks/{id}',
